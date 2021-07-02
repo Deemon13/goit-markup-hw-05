@@ -99,6 +99,7 @@ img {
 .header-content-container {
   display: flex;
   align-items: center;
+  padding: 24px 0 25px;
 }
 
 .menu {
@@ -123,7 +124,6 @@ img {
   color: var(--logo-color);
   margin-right: 93px;
   display: block;
-  padding: 24px 0 25px;
 }
 
 .logo-accent {
@@ -135,7 +135,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 32px 0;
+  padding: 8px 0 7px;
 }
 
 .current-link {
@@ -160,7 +160,7 @@ img {
 .contact-list-email,
 .contact-list-tel {
   display: inline-flex;
-  padding: 32px 0;
+  padding: 8px 0 6px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -362,6 +362,10 @@ img {
   justify-content: center;
 }
 
+.card-social-list-item {
+  width: 44px;
+  height: 44px;
+}
 .card-social-list-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -370,12 +374,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-}
-
-.card-social-list-icon {
   fill: #afb1b8;
 }
 
@@ -383,10 +384,6 @@ img {
 .card-social-list-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
-}
-
-.card-social-list-link:hover .card-social-list-icon,
-.card-social-list-link:focus .card-social-list-icon {
   fill: var(--main-color-light);
 }
 
@@ -409,6 +406,8 @@ img {
 }
 
 .client-section-list-item {
+  width: 170px;
+  height: 92px;
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 180px) / 6);
@@ -418,18 +417,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.client-section-list-icon {
   fill: #afb1b8;
 }
 
-.client-section-list-link:hover .client-section-list-icon,
-.client-section-list-link:focus .client-section-list-icon {
+.client-section-list-link:hover,
+.client-section-list-link:focus {
   fill: var(--accent-color);
 }
 
@@ -503,6 +499,8 @@ img {
 
 .footer-social-list-item {
   border-radius: 50%;
+  width: 44px;
+  height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -514,14 +512,11 @@ img {
 
 .footer-social-list-link {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-}
-
-.footer-social-list-icon {
   fill: var(--main-color-light);
 }
 
