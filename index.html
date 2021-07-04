@@ -43,21 +43,17 @@
         <ul class="contact-list list">
           <li class="contact-list-item">
             <a class="contact-list-email link" href="mailto:info@devstudio.com" lang="en">
-              <span class="contact-list-icon-container icon-mail">
-                <svg class="contact-list-icon-mail" width="16" height="12">
-                  <use href="./images/icons.svg#mail"></use>
-                </svg>
-              </span>
+              <svg class="contact-list-icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
               <span class="contact-list-link-container">info@devstudio.com</span>
             </a>
           </li>
           <li class="contact-list-item">
             <a class="contact-list-tel link" href="tel:+380961111111">
-              <span class="contact-list-icon-container icon-tel">
-                <svg class="contact-list-icon-tel" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-              </span>
+              <svg class="contact-list-icon" width="10" height="16">
+                <use href="./images/icons.svg#smartphone"></use>
+              </svg>
               <span class="contact-list-link-container">+38 096 111 11 11</span>
             </a>
           </li>
@@ -70,7 +66,9 @@
       <section class="hero-section section">
         <div class="container hero-content-container">
           <h1 class="hero-section-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-section-button modal-button">Заказать услугу</button>
+          <button type="button" class="hero-section-button modal-button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -485,5 +483,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button-close modal-button" type="button" data-modal-close>
+          <svg class="modal-button-icon-close" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
