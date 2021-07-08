@@ -22,7 +22,7 @@
 /* GLOBAL */
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: var(--main-text-size);
   letter-spacing: var(--main-text-letter-spacing);
@@ -125,7 +125,7 @@ img {
 .logo {
   display: block;
   margin-right: 93px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -147,7 +147,7 @@ img {
 }
 
 .current-link::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   display: block;
@@ -212,10 +212,7 @@ img {
   min-height: 600px;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/studio/background-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -704,11 +701,13 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms var(--main-transition-function);
+  transition: opacity 250ms var(--main-transition-function),
+    visibility 250ms var(--main-transition-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
